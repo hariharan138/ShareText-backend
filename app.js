@@ -29,6 +29,9 @@ client.connect()
             }
         });
 
+        app.get('/', (req, res) => {
+      res.send('Hello, World!');
+        });
         // API Endpoint to fetch data
         app.get("/:id", async (req, res) => {
             try {
